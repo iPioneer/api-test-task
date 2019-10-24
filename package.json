@@ -1,0 +1,24 @@
+{
+  "name": "api-test-task",
+  "version": "1.0.0",
+  "description": "API tests for http://qa-test.cloudbeds.com/app_dev.php/api/v1",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iPioneer/api-test-task.git"
+  },
+  "author": "Evgen Soloshenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iPioneer/api-test-task/issues"
+  },
+  "homepage": "https://github.com/iPioneer/api-test-task#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.2",
+    "supertest": "^4.0.2"
+  }
+}
