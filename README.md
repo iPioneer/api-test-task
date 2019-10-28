@@ -1,10 +1,10 @@
 # api-test-task
 
-To start test running print '''npm test''' in terminal
+To start test running print "npm test" in terminal
 
-###Test coverage:###
+Test coverage:
 
-####1. Roles:####
+1. Roles:
 
 - User
   - GET List of currencies - PASSED
@@ -18,7 +18,7 @@ To start test running print '''npm test''' in terminal
   - READ a currency - PASSED
   - POST Exchange currencies - FAILED
 
-####2. Currency:####
+2. Currency:
 GET List of currencies
 - Status Codes
 - 200 - PASSED
@@ -32,7 +32,7 @@ GET List of currencies
   - \_fields - string - PASSED
   - \_expands - string
 
-####3. POST Create a currency:####
+3. POST Create a currency:
 - Required parameters + code - string + country - string + value - numeric - PASSED
 - Status Codes
   - 200 Return when operation success - PASSED
@@ -49,14 +49,14 @@ GET List of currencies
   - country - string - PASSED
   - value - numeric - PASSED
 
-####4. DELETE currency:####
+4. DELETE currency:
 - Required parameters
   - id
 - Status codes
   - 200 Return when operation success - FAILED
   - 403 Return when issuer had no permission for operation - PASSED
 
-####5. READ currency:####
+5. READ currency:
 - Required parameters
   - id
 - Not required parameters
@@ -71,7 +71,7 @@ GET List of currencies
       - value - numeric
   - 403 Return when issuer had no permission for operation - PASSED
 
-####6. POST Exchange currencies:####
+6. POST Exchange currencies:
 - Required parameters
   - currencyFromId - integer
   - currencyToId - integer
@@ -81,7 +81,6 @@ GET List of currencies
   - 403 Return when issuer had no permission for operation - FAILED
 
 
-
-###Found issues:###
+Found issues:
 1. Currency exchange doesn't work: Type error: Too few arguments... 3 passed... and exactly 4 expected (500 Internal Server Error)
 2. Deletion a currency: API returns response code "204 No Content" but should response code "200 OK"
